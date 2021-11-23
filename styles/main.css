@@ -218,4 +218,6 @@ footer p {
 @media only screen and (max-width: 767px) {
 	header img { float: none;  }
 	header { text-align: center; }
+	section, aside { float: none; width: 95%;}
+	aside { padding-right: 2.5%; }
 }
