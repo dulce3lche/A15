@@ -213,3 +213,9 @@ footer p {
      section h1 { font-size: 135%;}
 	 section h2, aside h2 { font-size: 120%;}
 }
+
+/* mobile landscape layout (less than 767px) */
+@media only screen and (max-width: 767px) {
+	header img { float: none;  }
+	header h1 h2 { text-align: center; }
+}
