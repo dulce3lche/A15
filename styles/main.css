@@ -220,4 +220,5 @@ footer p {
 	header { text-align: center; }
 	section, aside { float: none; width: 95%;}
 	aside { padding-right: 2.5%; }
+	article img { max-width: 30%;}
 }
