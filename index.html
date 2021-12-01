@@ -7,6 +7,15 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">	
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -16,20 +25,23 @@
 	<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	
 	</header>
-	<ul id="nav_menu">
-		<li><a href="index.html" class="current">Home</a></li>
-		<li><a href="sampson.html">Speakers</a></li>
-		<li><a href="luncheons.html">Luncheons</a></li>
-		<li><a href="tickets.html">Tickets</a></li>
-		<li><a href="about_us.html">About Us</a>
-			<ul>
-				<li><a href="our_history.html">Our History</a></li>
-				<li><a href="boardofdirectors.html">Board of Directors</a></li>
-				<li><a href="pastspeakers.html">Past Speakers</a></li>
-				<li><a href="contactinfo.html">Contact Information</a></li>
-			</ul>
-		</li>
-	</ul>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul id="nav_menu">
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="sampson.html">Speakers</a></li>
+			<li><a href="luncheons.html">Luncheons</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="about_us.html">About Us</a>
+				<ul>
+					<li><a href="our_history.html">Our History</a></li>
+					<li><a href="boardofdirectors.html">Board of Directors</a></li>
+					<li><a href="pastspeakers.html">Past Speakers</a></li>
+					<li><a href="contactinfo.html">Contact Information</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
 	<main>
 		
 		<section>
@@ -62,23 +74,23 @@
 		
 		<aside>
 			<h2>Guest speakers</h2>
-			
-			<h2>October
-			<a href="speakers/toobin.html"><br>Jeffrey Toobin</a></h2>
+			<div class="speakers">
+			<h3>October
+			<a href="speakers/toobin.html"><br>Jeffrey Toobin</a></h3>
 			<img src="images/toobin75.jpg" alt="Jeffrey Toobin" height="75">
 
-			<h2>November
-			<a href="speakers/sorkin.html"><br>Andrew Ross Sorkin</a></h2>
+			<h3>November
+			<a href="speakers/sorkin.html"><br>Andrew Ross Sorkin</a></h3>
 			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin" height="75">
 
-			<h2>January
-			<a href="speakers/chua.html"><br>Amy Chua</a></h2>
+			<h3>January
+			<a href="speakers/chua.html"><br>Amy Chua</a></h3>
 			<img src="images/chua75.jpg" alt="Amy Chua" height="75">
 			
-			<h2>February
-			<a href="speakers/sampson.html"><br>Scott Sampson</a></h2>
+			<h3>February
+			<a href="speakers/sampson.html"><br>Scott Sampson</a></h3>
 			<img src="images/sampson75.jpg" alt="Scott Sampson" height="75">
-			
+			</div>
 		</aside>
 		
 	</main>
